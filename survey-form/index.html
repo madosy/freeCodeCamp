@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+    <h1 id="title">Language Learner Survey</h1>
+    <p id="description">We'd love to know what is your preferred method of 
+    learning new languages! Kindly share with us by filling
+    out this quick survey below.</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <label id="name-label">Name: <input type="text" id="name" placeholder="Johnny Rockets" required></label>
+            <label id="email-label">Email: <input type="email" id="email" placeholder="j.rockets@gmail.com" required></label>
+            <label id="number-label">Age: <input type="number" id="number" min="1" max="99" placeholder="36"></label>
+        </fieldset>
+        <fieldset>
+            <label>How many years of learning experience? <select id="dropdown">
+                <option value="0">Please select a value:</option>
+                <option value="1">1 Year</option>
+                <option value="2">2 Years</option>
+                <option value="3">3 Years or more</option>
+            </select></label>
+        </fieldset>
+        <fieldset>
+            Which is the better Resource? 
+            <label><input id="duolingo" name="resource" type="radio" value="duolingo" class="inline"> Duolingo</label>
+            <label><input id="pimsleur" name="resource" type="radio" value="pimsleur" class="inline"> Pimsleur</label>
+        </fieldset>
+        <fieldset>
+            What is your reason for learning a language?
+            <label><input type="checkbox" id="option-1" value="Fame and Glory" class="inline"> Fame and Glory</label>
+            <label><input type="checkbox" id="option-2" value="Fortune" class="inline"> Fortune</label>
+            <label><input type="checkbox" id="option-3" value="Entertainment" class="inline"> Entertainment</label>
+        </fieldset>
+        <textarea placeholder="Please enter any additional comments you'd like to leave for us."></textarea>
+        <button id="submit">Submit</button>
+    </form>
+    </div>
+    
+</body>
+</html>
